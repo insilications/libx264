@@ -4,10 +4,10 @@
 #
 %define keepstatic 1
 Name     : libx264
-Version  : 0.161
+Version  : 21.05.16
 Release  : 11
-URL      : file:///aot/build/clearlinux/packages/libx264/libx264-v.tar.gz
-Source0  : file:///aot/build/clearlinux/packages/libx264/libx264-v.tar.gz
+URL      : file:///aot/build/clearlinux/packages/libx264/libx264-v21.05.16.tar.gz
+Source0  : file:///aot/build/clearlinux/packages/libx264/libx264-v21.05.16.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -174,10 +174,6 @@ BuildRequires : pkgconfig(cairo-xcb-shm)
 BuildRequires : pkgconfig(cairo-xlib)
 BuildRequires : pkgconfig(cairo-xlib-xcb)
 BuildRequires : pkgconfig(cairo-xlib-xrender)
-BuildRequires : pkgconfig(dav1d)
-BuildRequires : pkgconfig(dbus-c++-1)
-BuildRequires : pkgconfig(dbus-c++-ecore-1)
-BuildRequires : pkgconfig(dbus-c++-glib-1)
 BuildRequires : pkgconfig(dri)
 BuildRequires : pkgconfig(egl)
 BuildRequires : pkgconfig(fdk-aac)
@@ -189,7 +185,6 @@ BuildRequires : pkgconfig(gbm)
 BuildRequires : pkgconfig(gl)
 BuildRequires : pkgconfig(glib-2.0)
 BuildRequires : pkgconfig(hogweed)
-BuildRequires : pkgconfig(jack)
 BuildRequires : pkgconfig(lame)
 BuildRequires : pkgconfig(libass)
 BuildRequires : pkgconfig(libbluray)
@@ -211,9 +206,7 @@ BuildRequires : pkgconfig(libpcre32)
 BuildRequires : pkgconfig(libpcrecpp)
 BuildRequires : pkgconfig(libpcreposix)
 BuildRequires : pkgconfig(libpng)
-BuildRequires : pkgconfig(libpostproc)
 BuildRequires : pkgconfig(libpulse)
-BuildRequires : pkgconfig(libraw1394)
 BuildRequires : pkgconfig(librtmp)
 BuildRequires : pkgconfig(libswresample)
 BuildRequires : pkgconfig(libswscale)
@@ -287,7 +280,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1621155698
+export SOURCE_DATE_EPOCH=1621157758
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -337,7 +330,7 @@ make  %{?_smp_mflags}  fprofiled VIDS="/opt/fprofile/harry.y4m /opt/fprofile/eye
 
 
 %install
-export SOURCE_DATE_EPOCH=1621155698
+export SOURCE_DATE_EPOCH=1621157758
 rm -rf %{buildroot}
 %make_install
 
