@@ -1,0 +1,1 @@
+--enable-shared --enable-static --enable-asm --enable-lto --enable-pic --bit-depth=all --enable-lsmash
