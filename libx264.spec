@@ -81,8 +81,6 @@ BuildRequires : libbluray-staticdev
 BuildRequires : libcap-ng-dev
 BuildRequires : libconfig-dev
 BuildRequires : libconfig-staticdev
-BuildRequires : libdav1d-dev
-BuildRequires : libdav1d-staticdev
 BuildRequires : libdrm
 BuildRequires : libdrm-dev
 BuildRequires : libdrm-lib
@@ -95,8 +93,6 @@ BuildRequires : libffi-staticdev
 BuildRequires : libgcc1
 BuildRequires : libidn2
 BuildRequires : libidn2-dev
-BuildRequires : libiec61883-dev
-BuildRequires : libiec61883-staticdev
 BuildRequires : libjpeg-turbo-dev
 BuildRequires : libmp3lame-dev
 BuildRequires : libmp3lame-lib
@@ -115,7 +111,6 @@ BuildRequires : libva
 BuildRequires : libva-dev
 BuildRequires : libvdpau
 BuildRequires : libvdpau-dev
-BuildRequires : libvidstab-dev
 BuildRequires : libvorbis-dev
 BuildRequires : libvorbis-staticdev
 BuildRequires : libvpx-dev
@@ -292,7 +287,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1621155588
+export SOURCE_DATE_EPOCH=1621155698
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -342,7 +337,7 @@ make  %{?_smp_mflags}  fprofiled VIDS="/opt/fprofile/harry.y4m /opt/fprofile/eye
 
 
 %install
-export SOURCE_DATE_EPOCH=1621155588
+export SOURCE_DATE_EPOCH=1621155698
 rm -rf %{buildroot}
 %make_install
 

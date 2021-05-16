@@ -22,10 +22,6 @@ cairo-xcb-shm
 cairo-xlib
 cairo-xlib-xcb
 cairo-xlib-xrender
-dav1d
-dbus-c++-1
-dbus-c++-ecore-1
-dbus-c++-glib-1
 dri
 egl
 fdk-aac
@@ -37,7 +33,6 @@ gbm
 gl
 glib-2.0
 hogweed
-jack
 lame
 libass
 libbluray
@@ -59,9 +54,7 @@ libpcre32
 libpcrecpp
 libpcreposix
 libpng
-libpostproc
 libpulse
-libraw1394
 librtmp
 libswresample
 libswscale
