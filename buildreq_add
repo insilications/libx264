@@ -27,9 +27,6 @@ l-smash-staticdev
 nasm
 nasm-bin
 nv-codec-headers-dev
-nvidia
-nvidia-dev
-nvidia-lib
 openssl-dev
 python3-dev
 python3-staticdev
